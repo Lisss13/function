@@ -20,14 +20,14 @@
 
 ######################################################################################
 
-def myfor (start, stop, acc = 0):
-    if start >= stop:
-        return acc
-    else:
-        acc += start
-        return myfor(start + 1, stop, acc)
-
-print(myfor(1, 100))
+# def myfor (start, stop, acc = 0):
+#     if start >= stop:
+#         return acc
+#     else:
+#         acc += start
+#         return myfor(start + 1, stop, acc)
+#
+# print(myfor(1, 100))
 
 
 # def myfor(start, stop, func, step = 1, rung = 0)
@@ -57,18 +57,19 @@ print(myfor(1, 100))
 # практика
 
 
+
 ###################################################################################
 
 
-def sumGenerator(fun):
-    return lambda a, b: sum(a, b, fun)
-
-def sum(a, b, fun):
-    if a > b:
-        return 0
-    else:
-        return fun(a) + sum(a + 1, b, fun)
-
-sunInter = sumGenerator(lambda x: x + x)
-
-print(sunInter(1,100))
+# def sumGenerator(fun):
+#     return lambda a, b: sum(a, b, fun)
+#
+# def sum(a, b, fun):
+#     if a > b:
+#         return 0
+#     else:
+#         return fun(a) + sum(a + 1, b, fun)
+#
+# sunInter = sumGenerator(lambda x: x + x)
+#
+# print(sunInter(1,100))
